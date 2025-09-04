@@ -42,12 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
       margin-top: 48px;
     }
     .container { max-width: 1100px; width: 100%; }
+		.hr-block { width: 100%; display: flex; flex-direction: column; align-items: center; }
     .title-block { display: flex; flex-direction: column; align-items: center; margin-bottom: 24px; text-align: center; }
     .title-block h2 { margin-bottom: 8px; font-size: 24px; font-weight: 700; color: #1a4f5f; }
     .title-block svg { margin-top: 16px; }
-    .two-column { display: flex; flex-direction: column; gap: 40px; margin-top: 40px; }
+    .two-column { display: flex; flex-direction: column; gap: 40px; margin-top: 40px; align-items: stretch; }
     @media (min-width: 768px) {
-      .two-column { flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 80px; }
+      .two-column { flex-direction: row; justify-content: space-between;  gap: 80px; }
     }
     .circle {
       background-color: #dce1e6; border-radius: 50%; width: 144px; height: 144px;
@@ -62,12 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
       justify-content: center; text-align: center; font-size: 18px; padding: 8px 16px;
     }
     .btn-round span { font-size: 14px; font-weight: 400; }
-    .left-col, .right-col { display: flex; flex-direction: column; align-items: center; gap: 48px; width: 100%; }
+    .left-col, .right-col { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 48px; width: 100%; }
     @media (min-width: 768px) { .left-col, .right-col { gap: 80px; width: 50%; } }
     .left-col .two-circles { display: flex; justify-content: space-between; width: 100%; max-width: 400px; }
     .right-col .circle-wrap { position: relative; max-width: 400px; display: flex; flex-wrap: wrap; justify-content: center; gap: 80px; }
     .circle.center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-    svg.connector { position:absolute; bottom:-55px; width:90px; height:60px; }
+    svg.connector { position:absolute; bottom: 0y; width:90px; height:60px; }
   `;
   document.head.appendChild(style);
 
@@ -88,31 +89,37 @@ document.addEventListener("DOMContentLoaded", function () {
       // ======================= PHIÊN BẢN TIẾNG VIỆT =======================
       newDiv.innerHTML = `
       <div class="title-main">
-        <h2 class="mb-2">Linh Hoạt & Tiết Kiệm – Thanh Toán Theo Nhu Cầu</h2>
- <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
-              </svg>
+        <h2 class="mb-2">Linh hoạt & Tiết kiệm chi phí – Trả theo nhu cầu</h2>
+        <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
+          <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
+        </svg>
       </div>
 
       <div class="two-column">
         <div class="left-col" style="position:relative">
-          <div class="circle md">Trưởng phòng nhân sự
-            <!-- Nối sang trái -->
-            <svg class="w-full connector" style="left: -60px; transform: rotateZ(125deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
-              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
-            </svg>
-            <!-- Nối sang phải -->
-            <svg class="w-full connector" style="right: -60px; transform: rotateZ(55deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
-              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
-            </svg>
+          <div class="hr-block">
+            <!-- Vòng tròn lớn + connectors -->
+            <div class="circle md">Trưởng phòng Nhân sự
+              <div class="connectors">
+                <!-- Nối sang trái -->
+                <svg class="w-full connector" style="left: -65px; transform: rotateZ(115deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+                  <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+                </svg>
+                <!-- Nối sang phải -->
+                <svg class="w-full connector" style="right: -65px; transform: rotateZ(65deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+                  <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Hai vòng tròn nhỏ -->
+            <div class="two-circles">
+              <div class="circle sm">Trưởng nhóm<br>Nhân sự Tổng hợp</div>
+              <div class="circle sm">Chuyên viên<br>Tuyển dụng</div>
+            </div>
           </div>
 
-          <div class="two-circles">
-            <div class="circle sm">Trưởng nhóm<br>Nhân sự tổng hợp</div>
-            <div class="circle sm">Chuyên viên<br>Tuyển dụng</div>
-          </div>
-
-          <div class="btn-round">Đội ngũ HR đầy đủ, không tốn chi phí toàn thời gian</div>
+          <div class="btn-round">Đội ngũ Nhân sự đầy đủ, Không cần chi phí toàn thời gian</div>
         </div>
 
         <div class="right-col">
@@ -124,38 +131,46 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="circle sm">BHXH,<br>Thuế TNCN,<br>Công đoàn</div>
           </div>
           <div class="btn-round">
-            Thực thi HR toàn diện
-            <span>Từ tuyển dụng đến tuân thủ – tất cả đều được lo</span>
+            Thực thi Nhân sự Trọn gói
+            <span>Từ tuyển dụng đến tuân thủ – tất cả đều được xử lý cho bạn</span>
           </div>
         </div>
       </div>
+
     `;
     } else {
       newDiv.innerHTML = `
       <div class="title-main">
         <h2 class="mb-2">Flexible & Cost-Effective – Pay as You Go</h2>
- <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
-                <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
-              </svg>
+        <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
+          <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
+        </svg>
       </div>
 
       <div class="two-column">
         <div class="left-col" style="position:relative">
-          <div class="circle md">HR Manager
-            <!-- Nối sang trái -->
-            <svg class="w-full connector" style="left: -60px; transform: rotateZ(125deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
-              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
-            </svg>
-            <!-- Nối sang phải -->
-            <svg class="w-full connector" style="right: -60px; transform: rotateZ(55deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
-              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
-            </svg>
+          <div class="hr-block">
+            <!-- Vòng tròn lớn + connectors -->
+            <div class="circle md">HR Manager
+              <div class="connectors">
+                <!-- Nối sang trái -->
+                      <svg class="w-full connector" style="left: -65px; transform: rotateZ(115deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+                        <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+                      </svg>
+                      <!-- Nối sang phải -->
+                      <svg class="w-full connector" style="right: -65px; transform: rotateZ(65deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+                        <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+                      </svg>
+              </div>
+            </div>
+
+            <!-- Hai vòng tròn nhỏ -->
+            <div class="two-circles">
+                      <div class="circle sm">HR General<br>Team Leader</div>
+                      <div class="circle sm">Recruitment<br>Consultant</div>
+            </div>
           </div>
 
-          <div class="two-circles">
-            <div class="circle sm">HR General<br>Team Leader</div>
-            <div class="circle sm">Recruitment<br>Consultant</div>
-          </div>
 
           <div class="btn-round">Your Full HR Team, Without Full-Time Cost</div>
         </div>
