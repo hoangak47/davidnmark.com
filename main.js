@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .btn-round span { font-size: 14px; font-weight: 400; }
     .left-col, .right-col { display: flex; flex-direction: column; align-items: center; gap: 48px; width: 100%; }
     @media (min-width: 768px) { .left-col, .right-col { gap: 80px; width: 50%; } }
-    .left-col .two-circles { display: flex; justify-content: space-between; width: 100%; max-width: 320px; }
+    .left-col .two-circles { display: flex; justify-content: space-between; width: 100%; max-width: 400px; }
     .right-col .circle-wrap { position: relative; max-width: 400px; display: flex; flex-wrap: wrap; justify-content: center; gap: 80px; }
     .circle.center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
     svg.connector { position:absolute; bottom:-55px; width:90px; height:60px; }
