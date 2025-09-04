@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const newDiv = document.createElement("div");
     newDiv.className = "container";
     newDiv.innerHTML = `
-      <div class="title-block">
-        <h2>Flexible & Cost-Effective – Pay as You Go</h2>
+      <div class="title-main">
+        <h2 class="mb-2">Flexible & Cost-Effective – Pay as You Go</h2>
  <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
                 <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
               </svg>
