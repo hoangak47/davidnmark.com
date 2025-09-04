@@ -80,7 +80,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const newDiv = document.createElement("div");
     newDiv.className = "container";
-    newDiv.innerHTML = `
+
+    // Kiểm tra URL (nên dùng pathname cho chắc)
+    const path = window.location.pathname;
+
+    if (path === "/trang-chu") {
+      // ======================= PHIÊN BẢN TIẾNG VIỆT =======================
+      newDiv.innerHTML = `
+      <div class="title-main">
+        <h2 class="mb-2">Linh Hoạt & Tiết Kiệm – Thanh Toán Theo Nhu Cầu</h2>
+ <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
+                <path fill="#225A67" d="M595.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z"></path>
+              </svg>
+      </div>
+
+      <div class="two-column">
+        <div class="left-col" style="position:relative">
+          <div class="circle md">Trưởng phòng nhân sự
+            <!-- Nối sang trái -->
+            <svg class="w-full connector" style="left: -60px; transform: rotateZ(125deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+            </svg>
+            <!-- Nối sang phải -->
+            <svg class="w-full connector" style="right: -60px; transform: rotateZ(55deg);" xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 140 24" fill="none">
+              <path d="M140.06 13.06a1.49 1.49 0 0 0 0-2.12l-9.55-9.547a1.5 1.5 0 0 0-2.12 0 1.51 1.51 0 0 0 0 2.122l8.49 8.485-8.49 8.485a1.51 1.51 0 0 0 0 2.122 1.5 1.5 0 0 0 2.12 0zM0 12v1.5h2v-3H0zm6 0v1.5h4v-3H6zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4zm8 0v1.5h4v-3h-4z" fill="#225A67"></path>
+            </svg>
+          </div>
+
+          <div class="two-circles">
+            <div class="circle sm">Trưởng nhóm<br>Nhân sự tổng hợp</div>
+            <div class="circle sm">Chuyên viên<br>Tuyển dụng</div>
+          </div>
+
+          <div class="btn-round">Đội ngũ HR đầy đủ, không tốn chi phí toàn thời gian</div>
+        </div>
+
+        <div class="right-col">
+          <div class="circle-wrap">
+            <div class="circle sm">Tuyển dụng</div>
+            <div class="circle sm">Tính lương</div>
+            <div class="circle sm center">Kế hoạch</div>
+            <div class="circle sm">Quan hệ<br>Nhân viên</div>
+            <div class="circle sm">BHXH,<br>Thuế TNCN,<br>Công đoàn</div>
+          </div>
+          <div class="btn-round">
+            Thực thi HR toàn diện
+            <span>Từ tuyển dụng đến tuân thủ – tất cả đều được lo</span>
+          </div>
+        </div>
+      </div>
+    `;
+    } else {
+      newDiv.innerHTML = `
       <div class="title-main">
         <h2 class="mb-2">Flexible & Cost-Effective – Pay as You Go</h2>
  <svg fill="none" viewBox="0 0 600 24" height="24" width="500" xmlns="http://www.w3.org/2000/svg" class="w-full">
@@ -124,6 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     `;
+    }
 
     outerDiv.appendChild(newDiv);
     wrapContent.appendChild(outerDiv);
